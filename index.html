@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="img/fav/site.webmanifest">
+    <script src="models/gamesound.class.js"></script>
+    <script src="models/drawable-object.class.js"></script>
+    <script src="models/static-object.class.js"></script>
+    <script src="models/endscreen.class.js"></script>
+    <script src="models/bottle.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="models/movable-object.class.js"></script>
+    <script src="models/status-bar.class.js"></script>
+    <script src="models/bottle-bar.class.js"></script>
+    <script src="models/coin-bar.class.js"></script>
+    <script src="models/boss-bar.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/chicken.class.js"></script>
+    <script src="models/baby-chicken.class.js"></script>
+    <script src="models/cloud.class.js"></script>
+    <script src="models/background-object.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="models/throwable-object.class.js"></script>
+    <script src="models/endboss.class.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="js/game.js"></script>
+    <title>El pollo loco</title>
+</head>
+<body>
+    <div id="canvas_hud_others">
+        <canvas id="can" width="720" height="480"></canvas>
+        <div id="hud">
+            <div onclick="toggleSound()" id="sound_button"></div>
+            <div onclick="toggleFullscreen()" id="fullscreen_button"></div>
+            <div ontouchstart="hudLeft()" ontouchend="hudLeftOut()" id="hud_left"></div>
+            <div ontouchstart="hudRight()" ontouchend="hudRightOut()" id="hud_right"></div>
+            <div ontouchstart="hudJump()" ontouchend="hudJumpOut()" id="hud_jump"></div>
+            <div ontouchstart="hudBottle()" ontouchend="hudBottleOut()" id="hud_bottle"></div>
+        </div>
+        <div id="startlevel" onclick="init()"></div>
+        <div id="turn_screen"></div>
+    </div> 
+</body>
+
+</html>
