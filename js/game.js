@@ -146,11 +146,15 @@ function enterFullscreen(el) {
     }
     document.getElementById('can').style.width = '100vw';
     document.getElementById('can').style.height = '100vh';
+    document.getElementById('hud').style.width = '100vw';
+    document.getElementById('hud').style.height = '100vh';
 }
 
 function exitFullscreen() {
     document.getElementById('can').style.width = '720px';
     document.getElementById('can').style.height = '480px';
+    document.getElementById('hud').style.width = '720px';
+    document.getElementById('hud').style.height = '480px';
 
     document.getElementById('fullscreen_button').style.backgroundImage = 'url(img/hud/expand-solid.svg)';
     if (document.exitFullscreen) {
