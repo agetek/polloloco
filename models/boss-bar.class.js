@@ -34,7 +34,7 @@ class BossBar extends DrawableObject {
             } else {
                 this.alpha = 1.0;
             }
-        }, 20);
+        }, 1000 / 60);
     }
 
     resolveImageIndex() {

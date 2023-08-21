@@ -59,7 +59,7 @@ class World {
             this.gameSound.checkSound();
             if (this.gameSound.actionSound.sound == true) { this.gameSound.actionSound.background.play(); }
             else { this.gameSound.actionSound.background.pause(); }
-        }, 100);
+        }, 20);
     }
 
     setStopableInterval(fn, time) {
@@ -82,6 +82,7 @@ class World {
             this.throwableObjects.push(bottle);
             this.collectedBottles -= 1;
             this.bottleBar.setPercentage(this.bottlePercentage());
+            this.keyboard.D = false;
         }
     }
 

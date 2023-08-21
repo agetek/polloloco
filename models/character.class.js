@@ -1,7 +1,7 @@
 class Character extends MovableObject {
     height = 280;
     y = 180;
-    speed = 20;
+    speed = 5;
     idleTimestamp = new Date().getTime();
 
     IMAGES_WALKING = [
@@ -86,7 +86,7 @@ class Character extends MovableObject {
             this.ifPartOne();
             this.ifPartTwo();
             this.ifPartThree();
-        }, 1000 / 15);
+        }, 1000 / 60);
     }
 
     ifPartOne() {
